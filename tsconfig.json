@@ -1,45 +1,19 @@
 {
-  "include": ["src"],
-  "exclude": [
-    "node_modules",
-    "dist",
-  ],
   "compilerOptions": {
-    "outDir": "./dist/@types",
-    "declaration": true,
-    "emitDeclarationOnly": true,
-    "isolatedModules": true,
-    "alwaysStrict": true,
-    "jsx": "react",
     "target": "es5",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "pretty": true,
-    "skipLibCheck": true,
-    "removeComments": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
     "esModuleInterop": true,
-    "rootDir": ".",
-    "baseUrl": ".",
-    "typeRoots": [
-      "index.d.ts",
-      "node_modules/@types"
-    ],
-    "paths": {
-      "@app/*": ["src/*"],
-      "@components/*": ["src/components/*"]
-    },
-    "lib": [
-      "es6",
-      "es2016",
-      "es2017",
-      "dom"
-    ],
-    "types": [
-      "node",
-      "react",
-    ]
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+
+    "jsx": "react",
+    "module": "ESNext",
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true
   }
 }
