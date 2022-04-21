@@ -1,6 +1,6 @@
 {
   "name": "qualyteam-lib",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "repository": "git@github.com:vitorhpaes/qualyteam-lib.git",
   "description": "React components library for Design System",
   "main": "dist/cjs/index.js",
