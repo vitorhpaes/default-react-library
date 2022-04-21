@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TestComponent from '../src/components/Button';
+import TestComponent from '../src/components/TestButton';
 
 const App = () => (
   <>
