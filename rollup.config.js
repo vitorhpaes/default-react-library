@@ -1,10 +1,10 @@
-import resolve from '@rollup/plugin-node-resolve'
-import commonjs from '@rollup/plugin-commonjs'
-import typescript from '@rollup/plugin-typescript'
-import postCSS from 'rollup-plugin-postcss'
-import dts from 'rollup-plugin-dts'
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import typescript from '@rollup/plugin-typescript';
+import postCSS from 'rollup-plugin-postcss';
+import dts from 'rollup-plugin-dts';
 
-const packageJSON = require('./package.json')
+const packageJSON = require('./package.json');
 
 export default [
 
@@ -33,4 +33,4 @@ export default [
     external: [/\.(css|scss)$/]
   }
 
-]
+];
