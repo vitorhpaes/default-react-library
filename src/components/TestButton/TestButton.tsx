@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface TestButtonProps {
+export interface TestButtonProps {
   version: string
 }
 
-import './styles.scss'
+import './TestButton.scss'
 
 const TestButton: React.FC<TestButtonProps> = ({ version }) => {
   return <button className="test-button">Hello World, {version}</button>;

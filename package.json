@@ -1,5 +1,5 @@
 {
-  "name": "qualyteam-lib",
+  "name": "default-react-library",
   "version": "1.1.0",
   "repository": "git@github.com:vitorhpaes/qualyteam-lib.git",
   "description": "React components library for Design System",
@@ -13,14 +13,12 @@
     "lint": "eslint --ext .js,.jsx, ./src --quiet --color",
     "install:dev": "rm -rf ./node_modules && yarn install",
     "test": "jest",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "storybook:run": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "author": "Vitor Paes <vhspaes@gmail.com>",
   "license": "ISC",
-  "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
@@ -29,6 +27,12 @@
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-node-resolve": "^13.2.1",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
     "@types/react": "^18.0.5",
     "babel-jest": "^27.5.1",
     "babel-loader": "^8.2.5",
@@ -37,6 +41,7 @@
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-storybook": "^0.5.11",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
@@ -45,9 +50,16 @@
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
+    "storybook-addon-sass-postcss": "^0.1.1",
     "style-loader": "^3.3.1",
     "ts-jest": "^27.1.4",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@storybook/builder-webpack5": "^6.4.22",
+    "@storybook/manager-webpack5": "^6.4.22",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
